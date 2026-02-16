@@ -1,0 +1,19 @@
+# Node
+node_modules/
+
+# Env
+.env
+.env.local
+
+# Next
+.next/
+
+# Build
+dist/
+build/
+
+# Generated Prisma
+server/generated/prisma
+
+# Logs
+*.log
