@@ -1,4 +1,4 @@
-import "dotenv/config"
+import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/index.js";
 
@@ -10,9 +10,9 @@ const connectDB = async () => {
   try {
     await prisma.$connect();
 
-    console.log("DB Connected Successfully!");
+    console.log("Database connected successfully");
   } catch (err) {
-    console.err("Something went wrong", err);
+    console.err("Datbase connection failed:", err);
     process.exit(1);
   }
 };
