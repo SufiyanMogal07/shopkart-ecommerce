@@ -20,7 +20,7 @@ model Product {
   price       Float
   imageUrl    String
 
-  order OrderItem[]
+  items OrderItem[]
 }
 
 model Order {
