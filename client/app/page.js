@@ -1,7 +1,12 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
-  return <div className="p-3">
+
+  const [products,setProducts] = useState();
+  
+  return <div className="">
     This is Home Component
-  </div>;
+    </div>;
 }
