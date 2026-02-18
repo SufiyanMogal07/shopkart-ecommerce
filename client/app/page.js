@@ -46,7 +46,7 @@ export default function Home() {
 
   console.log(products);
   return (
-    <div className="p-3 min-h-[calc(100vh-56px)] bg-violet-50">
+    <div className="common-page">
       {error && (
         <h2 className="text-center mt-10 text-2xl text-red-400 font-semibold">
           {error}
