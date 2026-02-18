@@ -105,10 +105,19 @@ export const createOrder = async (req, res) => {
       });
     }
 
-    return res.status(201).json({
-      success: true,
-      message: "Order Confirmed!",
+    const mockLogistics = {
+      trackingId: `MOB-${Math.random().toString(36).toUpperCase().substring(2, 10)}`,
+      carrier: "Standard Delivery",
+      status: "Shipped",
+      estimatedArrival: "3-5 Business Days",
+    };
+
+    res.status(201).json({
+      message: "Order placed successfully!",
+      orderId: order.id,
+      logistics: mockLogistics,
     });
+    
   } catch (err) {
     console.error("POST Order Error", err);
     return res.status(500).json({
