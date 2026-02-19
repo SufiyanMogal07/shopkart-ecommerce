@@ -1,9 +1,11 @@
 import React from 'react'
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div>This is footer</div>
+    <div className='text-center'>
+      <h3 className='text-lg font-medium my-2'>Made with ❤️ Sufiyan</h3>
+    </div>
   )
 }
 
-export default footer
+export default Footer
