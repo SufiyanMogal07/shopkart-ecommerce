@@ -38,21 +38,21 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div>
-        <h2>Fetching Products...</h2>
+      <div className="min-h-screen">
+        <h2 className="text-center text-3xl mt-10">Fetching Products...</h2>
       </div>
     );
   }
 
   console.log(products);
   return (
-    <div className="common-page">
+    <div className="common-page py-5 px-10!">
       {error && (
         <h2 className="text-center mt-10 text-2xl text-red-400 font-semibold">
           {error}
         </h2>)}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 pt-3 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 pt-3 px-4">
           {products.map((item) => {
             return <ProductCard data={item} key={item.id}/>
           })}
