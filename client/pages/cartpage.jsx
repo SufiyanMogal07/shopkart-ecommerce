@@ -3,6 +3,7 @@
 import { getItem, setItem } from "@/utils/localstorage/storage"
 import React, { useEffect, useState } from "react"
 import Link from "next/link"
+import { ArrowLeftIcon } from "lucide-react"
 
 const CartPage = () => {
   const [cart, setCart] = useState([])
@@ -43,7 +44,11 @@ const CartPage = () => {
 
   return (
     <div className="p-6 min-h-[85vh] max-w-4xl mx-auto">
-      <h2 className="text-3xl font-semibold mb-6">Shopping Cart</h2>
+      <div className="text-lg font-semibold text-violet-950">
+        <Link className="flex items-center gap-x-1" href={"/"}> <ArrowLeftIcon size={18}/> Home</Link>
+      </div>
+      {/* <Link className="flex items-center gap-x-1 mb-2" href={"/"}><ArrowLeftIcon size={20}/> Back to Home Page</Link> */}
+      <h2 className="text-3xl font-semibold mt-3 mb-6">Shopping Cart</h2>
 
       {cart.length === 0 ? (
         <div className="text-center mt-10">
