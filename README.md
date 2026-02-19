@@ -202,11 +202,6 @@ The AI feature has inherent limitations that users and developers should underst
 
 2. **Data Quality Dependency**: Output quality depends entirely on input quality. Incomplete or inaccurate product descriptions lead to less useful insights.
 
-3. **No Real-Time Verification**: AI insights are generated analysis, not verified facts. Claims about product features are based on provided text, not independent testing.
-
-4. **Generic Patterns**: The AI applies general e-commerce logic and may miss niche use cases or industry-specific considerations.
-
-5. **No Personalization**: Insights are generic for the product, not tailored to individual user preferences or needs.
 
 ### Responsible Usage
 
@@ -242,30 +237,6 @@ To maintain trust and transparency:
 | Google Generative AI | 0.24 | Gemini API client |
 | Nodemon | 3.1 | Development server |
 
----
-
-## Data Model
-
-### Core Entities
-
-**Product**
-- `id` (UUID): Unique identifier
-- `title` (String): Product name
-- `description` (String): Product details
-- `price` (Float): Product price
-- `imageUrl` (String): Product image
-
-**Order**
-- `id` (UUID): Unique identifier
-- `name`, `email`, `address` (String): Customer details
-- `totalAmount` (Float): Order total
-- `createdAt` (DateTime): Order timestamp
-
-**OrderItem** (Junction Table)
-- Links products to orders
-- Tracks quantity and subtotal per product
-
----
 
 ## Development Workflow
 
