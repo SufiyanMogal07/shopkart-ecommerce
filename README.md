@@ -7,8 +7,8 @@ A full-stack e-commerce application demonstrating a complete shopping flow with 
 ShopKart provides users with a seamless shopping experience across product discovery, detailed product views, cart management, and checkout. The platform integrates Google Gemini AI to generate structured product insights, helping users make informed purchasing decisions while maintaining transparency about AI capabilities and limitations.
 
 **Key Features:**
-- Complete e-commerce workflow (product listing → detail → cart → checkout → order)
-- AI-generated product insights with smart caching
+- Complete e-commerce workflow (product listing → add to cart → checkout → order)
+- AI-generated product insights with smart caching on Product Detail Page
 - Responsive design with modern UI components
 - Persistent cart using browser storage
 - RESTful API architecture with clear separation of concerns
@@ -274,7 +274,7 @@ This project demonstrates:
 - **State Management**: Client-side state with localStorage persistence
 - **User Experience**: Loading states, error handling, toast notifications
 - **Performance Optimization**: Smart caching, efficient API calls
-- **Code Organization**: Clear separation of concerns (controllers, routes, services)
+- **Code Organization**: Clear separation of concerns (controllers, routes)
 - **Responsive Design**: Mobile-first CSS approach
 - **Responsible AI**: Transparent limitations and honest feature integration
 
