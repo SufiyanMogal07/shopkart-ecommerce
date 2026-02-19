@@ -8,7 +8,7 @@ ShopKart provides users with a seamless shopping experience across product disco
 
 **Key Features:**
 - Complete e-commerce workflow (product listing → add to cart → checkout → order)
-- AI-generated product insights with smart caching on Product Detail Page
+- AI-generated product insights on Product Detail Page with smart caching
 - Responsive design with modern UI components
 - Persistent cart using browser storage
 - RESTful API architecture with clear separation of concerns
