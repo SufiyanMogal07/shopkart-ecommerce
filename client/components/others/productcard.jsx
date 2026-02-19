@@ -14,7 +14,7 @@ const Productcard = ({ data }) => {
           <Image className='object-cover' src={imgSrc} fill alt={data.title + " Image"} onError={() => setImgSrc("https://placehold.co/600x400/png")} />
         </div>
         <div className='px-2 py-3'>
-          <h2 className='font-semibold md:text-xl text-black mb-1'>{data.title}</h2>
+          <h2 className='font-semibold md:text-xl text-black mb-1 line-clamp-1'>{data.title}</h2>
           <h3 className='font-semibold text-[18px] text-gray-700'>₹{data.price}</h3>
           <button onClick={(e) => {
             e.preventDefault()
