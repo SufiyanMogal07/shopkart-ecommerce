@@ -24,7 +24,7 @@ ShopKart provides users with a seamless shopping experience across product disco
 
 1. **Clone and install dependencies:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SufiyanMogal07/shopkart-ecommerce.git
    cd shopkart-ecommerce
    
    # Backend
