@@ -123,8 +123,6 @@ GET /products/:id          Get product details
 ### Orders
 ```
 POST /orders               Create an order
-GET /orders                List orders
-GET /orders/:id            Get order details
 ```
 
 ### AI Insights
