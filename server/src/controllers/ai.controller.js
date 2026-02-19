@@ -23,10 +23,10 @@ Description: ${description}
 Analyze the product data above and provide a structured summary for a product detail page (PDP).
 
 ### OUTPUT FORMAT
-1. **Key Highlights** (3 bullet points): Focus on the most unique technical specs or value props.
-2. **Pros** (2 bullet points): Why a customer would choose this over competitors.
-3. **Limitation** (1 sentence): An honest, professional caveat (e.g., "Requires separate batteries").
-4. **Target Audience**: One specific sentence identifying who benefits most.
+1. Key Highlights (3 bullet points): Focus on the most unique technical specs or value props.
+2. Pros (2 bullet points): Why a customer would choose this over competitors.
+3. Limitation** (1 sentence): An honest, professional caveat (e.g., "Requires separate batteries").
+4. Target Audience**: One specific sentence identifying who benefits most.
 
 ### CONSTRAINTS
 - Tone: Professional, helpful, and concise.
@@ -36,7 +36,7 @@ Analyze the product data above and provide a structured summary for a product de
 `;
 
     const result = await model.generateContent(prompt);
-    const response = await result.response;
+    const response =  result.response;
     const text = response.text();
 
     res.status(200).json({ insight: text });
