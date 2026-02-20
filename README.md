@@ -45,7 +45,7 @@ ShopKart provides users with a seamless shopping experience across product disco
 
    **Client** - Create `client/.env`:
    ```
-   NEXT_PUBLIC_API_URL=http://localhost:5000/api
+   NEXT_PUBLIC_API_URL=http://localhost:5001/api
    ```
 
 3. **Setup database:**
