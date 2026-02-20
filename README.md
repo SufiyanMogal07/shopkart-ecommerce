@@ -51,6 +51,7 @@ ShopKart provides users with a seamless shopping experience across product disco
 3. **Setup database:**
    ```bash
    cd server
+   npx prisma generate
    npx prisma migrate dev
    npm run seed-products # seed the mock data
    ```
@@ -100,13 +101,14 @@ server/
 │   │   ├── products.routes.js
 │   │   ├── orders.routes.js
 │   │   └── ai.routes.js
-│   └── app.js             # Express setup
+│   └── app.js             # Express Initilization
 ├── prisma/
 │   ├── schema.prisma      # Data models
 │   ├── migrations/        # Database migrations
 │   └── seed.js            # Sample data
 ├── db/
 │   └── dbConfig.js        # Database connection
+├── server.js              # Server Running
 └── package.json
 ```
 
